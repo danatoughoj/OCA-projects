@@ -1,0 +1,318 @@
+body{
+	margin: 0;
+	box-sizing: border-box;
+}
+.nav-item{
+    padding: 10px 30px;
+}
+.navbar-brand:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+.navbar{
+    box-shadow: 3px 3px 18px #333;
+}
+.dropdown-menu{
+    background-color:#343a40 !important;
+    text-align: center !important;
+    border: none !important;
+}
+.dropdown-menu a{
+    color: gray !important;
+}
+.dropdown-menu a:hover{
+    transform: scale(1);
+    transition: all;
+    background-color: #343A40;
+    color: #7F997F !important;
+}
+
+#h1{
+	text-align: center;
+	font-weight: 900;
+	color: #FFF;
+
+}
+
+#calculatorContaner {
+	background-image: url(/imgs/background1.png);
+	background-size: cover;
+	height: 100vh;
+	padding-top: 18vh;
+}
+
+
+#Calculator{
+	margin-top: 80px;
+	padding:10px;
+	background-color:black;
+	width: 400px;
+	height: 500px;
+	border-radius: 15px;
+	box-shadow: 5px 8px 8px -2px rgba(0, 0, 0, 0.61);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap:6px;
+	grid-template-areas: 
+	  "display display display display"
+	  "cdisplay cdisplay cdisplay cdisplay"
+	  "clear1 clear1 divide multiply"
+	  "power fact abs minus"
+	  "seven eight nine plus"
+	  "four five six equal"
+	  "one two three equal"
+	  "zero zero dot equal";
+	}
+
+
+
+
+#Calculator button{
+	 background-color: LightSlateGray;
+	 font-size: 1.7rem;
+     color:white;
+	 border-radius: 10px;
+	 border: none;
+	 outline: none;
+	 
+	}
+#Calculator button:hover{
+	background-color: gray;
+	color:black;
+	cursor: pointer;
+	}
+#Calculator button:active{
+	box-shadow: 0 1px #666;
+    transform: translateY(4px);
+	}
+		
+
+#display{
+		width: 100%;
+		height: 60px;
+		
+	   grid-area:display;
+       text-align:left;
+       border:none;
+	   border-top-left-radius: 7px;
+	   border-top-right-radius: 7px;
+	   font-size:30px;
+       
+       background-color: aliceblue;
+       color: blue;
+    }
+
+#cdisplay{
+     grid-area:cdisplay;
+	 color:white;
+	 text-align:right;
+	 background:black;
+	 border:none;
+	 font-size:30px;
+	 margin-bottom: 10px;
+	}
+
+#clear1
+	{
+	  grid-area:clear1;
+	  background:rgb(172,57,57);
+	}
+#Calculator #clear1
+	{
+	  background:rgb(172,57,57);
+	}
+#fact
+	{
+	grid-area:fact;
+	}
+#divide
+	{
+	grid-area:divide;
+	}
+#multiply
+	{
+	grid-area:multiply;
+	}
+#plus{
+	grid-area:plus;
+	}
+#minus{
+	grid-area:minus;
+	}
+#seven
+	{
+	grid-area:seven;
+	}
+#eight
+	{
+	grid-area:eight;
+	}
+#nine
+	{
+	grid-area:nine;
+	}
+#four
+	{
+	grid-area:four;
+	}
+#five
+	{
+	grid-area:five;
+	}
+#three
+	{
+	grid-area:three;
+	}
+#two
+	{
+	grid-area:two;
+	}
+#one
+	{
+	grid-area:one;
+	}
+#dot
+	{
+	grid-area:dot;
+	}
+#zero{
+	grid-area:zero;
+	}
+#equal{
+	grid-area:equal;
+	}
+#six{
+	grid-area:six;
+	}
+#power{
+	grid-area:power;
+	}
+#abs{
+	grid-area:abs;
+	}
+
+	
+@media screen and (max-width: 1024px) {
+		#Calculator{
+			width: 67vw;
+			height: 60vh;
+			margin-top: 75px;
+		}
+		.m-footer {
+			font-size: 2.5em ;
+		}
+	}
+
+@media screen and (max-width: 424px) {
+		#Calculator{
+			width: 336px;
+			height: 445px;
+			margin-top: 93px;
+		}
+	}
+	
+@media screen and (max-width: 380px) {
+		#Calculator{
+			width: 303px;
+			height: 446px;
+			margin-top: 94px;
+		}
+	}
+
+@media screen and (max-width: 320px) {
+		#Calculator{
+			width: 280px;
+			height: 430px;
+			margin-top: 77px;
+		}
+		#calculatorContaner {
+			height: 102vh;
+		}
+
+}
+@media screen and (max-width: 280px) {
+		#Calculator{
+			width: 268px;
+			height: 446px;
+			margin-top: 105px;
+		
+		}
+}
+
+/* ********************** */
+  /* --------------------------- */
+  .m-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.5em;
+    background-color: #343A34;
+    height: auto;
+    color: gray;
+    text-align: start;
+    padding-top: 1em;
+    padding-left: 10em;
+    padding-bottom: 1rem;
+}
+.contact-icon {
+    color: #CED9AC;
+    list-style: none;
+}
+.contact-link{
+    color: #CED9AC;
+}
+.contact-link:hover{
+    text-decoration: none;
+    color: #CED9AC;
+}
+.copyrights {
+    background-color: rgb(112, 110, 110);
+    text-align: center;
+    padding-right: 12em;
+    color: #CED9AC;
+}
+
+.m-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 12vw;
+	padding-left: 4em;
+  }
+  .icons {
+	font-size: 1.25em;
+  }
+  .iconPhoto {
+	margin-left: 0;
+	padding-left: 0;
+	padding-right: 3em;
+  }
+  .Submit-Clear {
+	display: grid;
+	grid-template-columns: 1fr;
+  }
+  .button {
+	width: 100%;
+  }
+  .mainText {
+	margin-bottom: 1em;
+  }
+  .m-footer {
+	grid-gap: 2em;
+	/* overflow: scroll; */
+	font-size: 0.8rem;
+	padding: 1em;
+	/* width: 100vw; */
+  }
+  .contact-icon{
+	font-size: 1rem;
+  }
+  .copyrights{
+	padding: 0;
+  }
+  h4{
+	font-size: 1rem !important;
+}

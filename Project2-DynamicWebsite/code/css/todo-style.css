@@ -1,0 +1,416 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center !important;
+    /* font-family: 'Merriweather', serif !important; */
+    /* font-family: 'Lobster', cursive !important; */
+    /* font-family: 'Source Sans Pro', sans-serif !important; */
+}
+
+
+/* Tags & Elements Style */
+h1{
+    font-weight: 900 !important;
+    text-shadow: 1px 1px black;
+}
+a:hover{
+    color: #7f997f !important;
+    text-decoration: none !important;
+    transform: scale(1.2);
+    transition: all;
+}
+
+/* Overflow Scrollbar Style */
+.scroll::-webkit-scrollbar {
+    width: 12px;
+    height: 100%;
+} 
+.scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+} 
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+/* Buttons Style */
+.btn1{
+    background-color: #3f4c3f;
+    box-shadow: 0 6px #2C352C;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    width: 40%;
+    margin: 10px auto;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+.btn2{
+    background-color: transparent;
+    color: #cc0000;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+.btn1:hover{
+    transform: scale(1.1);
+    transition: all;
+}
+
+
+/* Navigation bar style */
+.nav-item{
+    padding: 10px 30px;
+}
+.navbar-brand:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+.navbar{
+    box-shadow: 3px 3px 18px #333;
+}
+.dropdown-menu{
+    background-color:#343a40 !important;
+    text-align: center !important;
+    border: none !important;
+}
+.dropdown-menu a{
+    color: gray !important;
+}
+.dropdown-menu a:hover{
+    transform: scale(1);
+    transition: all;
+    background-color: #343a40;
+    color: #7f997f !important;
+
+}
+
+
+/* todo Section Style */
+#todo{
+    background-image: url("../imgs/background1.png");
+    background-size: cover;
+    color:white;
+    height: 100vh;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.todo_container{
+    height: 60vh;
+    width: 28vw;
+}
+.bar ul{
+    width: 100%;
+    display: flex;
+    padding-left: 0px;
+    margin: 0px;
+}
+.bar ul li{
+    flex: 1;
+    list-style-type: none;
+    padding: 10px 20px 10px 20px;
+    text-align: left !important;
+    font-size: 1.5rem;
+    text-align: center !important;
+}
+.bar ul li i:hover{
+    color: #3f4c3f;
+    transform: scale(1.3);
+    transition: all;
+}
+.selected-tab{
+    background-color: #ced9ce;
+    border-radius: 7px 7px 0px 0px;
+    color: #7f997f;
+}
+.content{
+    background-color: #ced9ce;
+    height: 60vh;
+    width: 28vw;
+    border-radius:0px 7px 7px 7px;
+    overflow: scroll;
+}
+#unchecked, #checked{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+} 
+#unchecked .tasks_input{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 3px 3px 10px #333 !important;
+    margin: 30px 0px !important;
+    padding: 5px 20px;
+}
+#unchecked h3, #checked h3{
+    color: #3f4c3f;
+    font-weight: bolder;
+}
+#unchecked_tasks{
+    text-align: left;
+}
+.task{
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+.task span{
+    flex: 1;
+    white-space:nowrap;
+    overflow: hidden;
+    margin-bottom: 10px;    
+}
+.task span label{
+    text-align: left;
+    word-wrap: break-word;
+    display: inline-block; 
+}
+.task span button{
+    float: right;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin-top: 1rem;
+} 
+
+/* Footer Section Style */
+.m-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.5em;
+    background-color: #353A40;
+    height: 8em;
+    color: gray;
+    text-align: start;
+    padding-top: 1em;
+    padding-left: 10em;
+}
+.contact-icon {
+    color: #CED9AC;
+    list-style: none;
+}
+.contact-link{
+    color: #CED9AC;
+}
+.contact-link:hover{
+    text-decoration: none;
+    color: #CED9AC;
+}
+.copyrights {
+    background-color: rgb(112, 110, 110);
+    text-align: center;
+    padding-right: 12em;
+    color: #CED9AC;
+}
+
+
+@media only screen and (max-width: 600px) {
+    p{
+        font-size: 0.9rem;
+    }
+    h1{
+        font-size: 2rem !important;
+    }
+    /* todo section Style */
+    #todo{
+        background-image: url("../imgs/background1.png");
+        padding-top: 10vh;
+    }
+    .todo_container{
+        height: 55vh;
+        width: 85vw;
+        margin-bottom: 1rem;
+    }
+    .bar ul li{
+        font-size: 1.3em;
+    }
+    .content{
+        width: 85vw;
+        height: 55vh;
+    } 
+    /* Footer Section style */
+    h4{
+        font-size: 1rem !important;
+    }
+    .m-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 12vw;
+        padding-left: 4em;
+    }
+    .icons {
+        font-size: 1.25em;
+    }
+    .iconPhoto {
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 3em;
+    }
+    .Submit-Clear {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .button {
+        width: 100%;
+    }
+    .mainText {
+        margin-bottom: 1em;
+    }
+    .m-footer {
+        grid-gap: 2em;
+        overflow: scroll;
+        font-size: 0.8rem;
+        padding: 1em;
+        width: 100vw;
+    }
+    .contact-icon{
+        font-size: 1rem;
+    }
+    .copyrights{
+        padding: 0;
+    } 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    p{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2.5rem !important;
+    }
+    /* todo section Style */
+    #todo{
+        background-image: url("../imgs/background1.png");
+        padding-top: 10vh;
+    }
+    .bar ul li{
+        font-size: 1.5em;
+    }
+    .todo_container{
+        height: 65vh;
+        width: 80vw;
+        margin-bottom: 1rem;
+    }
+    .content{
+        width: 80vw;
+        height: 65vh;
+    }  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    p{
+        font-size: 0.9rem;
+    }
+    /* Footer Section Style */
+    .m-footer {
+        padding-left: 3em;
+    }
+    .copyrights {
+        padding-right:0;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) {
+    p{
+        font-size: 0.9rem;
+    }
+    h1{
+        font-size: 3.5rem !important;
+    }
+    /* todo section Style */
+    #todo{
+        background-image: url("../imgs/background1.png");
+        padding-top: 5vh;
+    }
+    .bar ul li{
+        font-size: 2em;
+    }
+    .todo_container{
+        height: 65vh;
+        width: 80vw;
+        margin-bottom: 1rem;
+    }
+    .content{
+        width: 80vw;
+        height: 65vh;
+    } 
+    #unchecked h3, #checked h3 {
+        font-size: 1.6rem !important;        
+    }
+    .task span input{
+        width: 20px;
+        height: 20px;
+    }
+    .task span label{
+        font-size: 1.2rem !important;
+    }
+    .task span button{
+        font-size: 1.6rem;
+    }
+    #buttons{
+        font-size: 1.6rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    p{
+        font-size: 1.1rem;
+    }
+    h1{
+        font-size: 2.5rem !important;
+    }
+    /* todo section Style */
+    #todo{
+        background-image: url("../imgs/background1.png");
+        padding-top: 10vh;
+    }
+    .bar ul li{
+        font-size: 1.5em;
+    }
+    .todo_container{
+        height: 60vh;
+        width: 28vw;
+        margin-bottom:0;
+    }
+    .content{
+        width: 28vw;
+        height: 60vh;
+    }  
+    #unchecked h3, #checked h3 {
+        font-size: 1.5rem;        
+    }
+    .task span input{
+        width: 15px;
+        height: 15px;
+    }
+    .task span label{
+        font-size: 1rem;
+    }
+    .task span button{
+        font-size: 1.5rem;
+    }
+    #buttons{
+        font-size: 1rem;
+    }
+    
+}

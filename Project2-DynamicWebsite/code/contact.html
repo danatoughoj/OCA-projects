@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" 
+    content="This is a Contact Form for small managment website">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <title> MDM-Contact Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <link rel="stylesheet" href="css/contact-style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <a class="navbar-brand" href="index.html"> <img src="imgs/logo.png" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="calculator.html">Calculator</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="todo.html">Todo</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Theme</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" onclick="changeToGreenFunction()">Green</a>
+                      <a class="dropdown-item" onclick="changeToGrayFunction()"> Gray</a>
+                      <a class="dropdown-item" onclick="changeFont1Function()"> Merriweather</a>
+                      <a class="dropdown-item" onclick="changeFont2Function()"> Source Sans Pro</a>
+                      <a class="dropdown-item" onclick="changeFontSize()">Bigger Text Size</a>
+                      <a class="dropdown-item" onclick="changeFontSize1()">Smaller Text Size</a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </nav>
+    <header>
+      <h1 class="mainText">Contact Us</h1>.
+    </header>
+    <main class="m-container container-lg" style="margin: 0%">
+      <div class="icons">
+        <div class="iconPhoto">
+          <img class="photo" src="/imgs/71769944.png" alt="Mohammad AL-Zoubi" />
+          <p class="icontext">Mohammad Al-Zoubi</p>
+        </div>
+
+        <div class="iconPhoto">
+          <img class="photo" src="/imgs/60710271.jpg" alt="Dana Toughoj" />
+          <p class="icontext">Dana Toughoj</p>
+        </div>
+
+        <div class="iconPhoto">
+          <img src="/imgs/47386345_1972020342834210_2482198833153441792_o1.jpg" alt="Monther Twaissi" class="photo"/>
+          <p class="icontext">Monther Twaissi</p>
+        </div>
+      </div>
+      <div class="contactForm">
+        <form>
+          <p class="contactFormText">Your Feedback</p>
+          <div>
+            <input type="text" class="userData" placeholder="User Name" />
+          </div>
+          <div>
+            <input id="email" type="email" class="userData" placeholder="User Email" />
+          </div>
+          <div>
+            <input type="date" class="userData" placeholder="Date" />
+          </div>
+          <div>
+            <input id="phone" type="number" class="userData" placeholder="Phone Number" />
+          </div>
+          <div>
+            <input id="password" type="password" class="userData" placeholder="Password" />
+          </div>
+          <div>
+            
+            <textarea class="userData" id="textArea" cols="30" rows="10" placeholder="Enter Your Message Here"></textarea>
+            
+          </div>
+          <div>
+                <input type="checkbox" id="agreement" />
+                <label for="checkbox" style="color: aliceblue">I Agree The Company <u style="color: #ced9ac; font-size: 10">Privacy&policy</u> </label>
+          </div>
+
+          <div class="Submit-Clear">
+            <button class="button"  id="submit-btn" disabled onclick="saveToLs()">Local Storage </button>
+            <button class="button" id="submit-btn1" disabled  onclick="saveToSs()">Session Storage </button>
+            <button class="button"  id="clear-btn" onclick="clearStorage()" > Clear </button>
+          </div>
+          
+        </form>
+      </div>
+      
+    </main>
+    <footer>
+      <div class="m-footer">
+        <div class="footer-section">
+          <h4>Monther Twaissi</h4>
+          <li class="contact-icon">
+            <i class="fas fa-envelope-open-text"></i>
+            <a class="contact-link" href="monzer.twaissi@gmail.com" target="_blank">e-mail</a>
+          </li>
+          <li class="contact-icon">
+            <i class="fab fa-github"></i>
+            <a class="contact-link"  href="https://github.com/Monther-Twaissi" target="_blank">GitHub</a>
+          </li>
+          <li class="contact-icon">
+            <i class="fab fa-linkedin"></i>
+            <a class="contact-link" href="https://linkedin.com/in/Monther-Twaissi" target="_blank" >Linked-In</a>
+          </li>
+        </div>
+        <div class="footer-section">
+          <h4>Dana Toughoj</h4>
+          <li class="contact-icon">
+            <i class="fas fa-envelope-open-text"></i>
+            <a class="contact-link" href="danatough@gmail.com" target="_blank">e-mail</a>
+          </li>
+          <li class="contact-icon">
+            <i class="fab fa-github"></i>
+            <a class="contact-link"  href="https://github.com/danatoughoj" target="_blank">GitHub</a>
+          </li>
+          <li class="contact-icon">
+            <i class="fab fa-linkedin"></i>
+            <a class="contact-link" href="https://www.linkedin.com/feed/ " target="_blank" >Linked-In</a>
+          </li>
+        </div>
+        <div class="footer-section">
+        <h4>Monhammad al-Zoubi</h4>
+          <li class="contact-icon">
+            <i class="fas fa-envelope-open-text"></i>
+            <a class="contact-link" href=" alzoubi.mohmad94@gmail.com" target="_blank">e-mail</a>
+          </li>
+          <li class="contact-icon">
+            <i class="fab fa-github"></i>
+            <a class="contact-link"  href=" https://github.com/Mohammad-Alzoubi" target="_blank">GitHub</a>
+          </li>
+          <li class="contact-icon">
+            <i class="fab fa-linkedin"></i>
+            <a class="contact-link" href="https://www.linkedin.com/in/mohammad-alzoubi/" target="_blank" >Linked-In</a>
+          </li>
+        </div>
+      </div>
+      <div class="copyrights">CopyRights M.D.M 2020</div>
+    </footer>
+    <script src="/javascript/contact-script.js">
+    </script>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

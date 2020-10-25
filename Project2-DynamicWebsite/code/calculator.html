@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="This is a small management website that contains a Calculator.">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Source+Sans+Pro:wght@600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+    <link rel="stylesheet" href="css/calculator-style.css">
+  <title>Calculator</title>
+</head>
+<body>
+    <!-- Start header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="index.html"> <img src="imgs/logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link " href="#calculatorContaner">Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="todo.html">Todo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Theme</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" onclick="changeToGreenFunction()">Green</a>
+                            <a class="dropdown-item" onclick="changeToGrayFunction()"> Gray</a>
+                            <a class="dropdown-item" onclick="changeFont1Function()"> Merriweather</a>
+                            <a class="dropdown-item" onclick="changeFont2Function()"> Source Sans Pro</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+
+    <!-- Start section -->
+    <section id="calculatorContaner">
+        <h1 id="h1">Calculator</h1>
+        <div id="Calculator">
+            
+            <input  id="display" class="display" disabled placeholder="="></input>
+            <input  id="cdisplay" class="display" disabled placeholder="="></input>
+            
+            <button id="clear1" value="C">AC </button>
+            <button id="fact" value="!">!</button>
+            <button id="divide" value="/">/</button>
+            <button id="multiply" value="*">*</button>
+            <button id="power" value="p">x <sup>2</sup> </button>
+            <button id="abs" value="||">|X|</button>
+            <button id="seven" value="7">7</button>
+            <button id="eight" value="8">8</button>
+            <button id="nine" value="9">9</button>
+            <button id="minus" value="-">-</button>
+            <button id="four" value="4">4</button>
+            <button id="five" value="5">5</button>
+            <button id="six" value="6">6</button>
+            <button id="plus" value="+">+</button>
+            <button id="one" value="1">1</button>
+            <button id="two" value="2">2</button>
+            <button id="three" value="3">3</button>
+            <button id="zero" value="0">0</button>
+            <button id="dot" value=".">.</button>
+            <button id="equal" value="=">=</button>
+        </div>
+    </section>
+    <!-- End section -->
+
+    <!-- Start footer -->
+    <footer>
+        <div class="m-footer">
+          <div class="footer-section">
+            <h4>Monther Twaissi</h4>
+            <li class="contact-icon">
+              <i class="fas fa-envelope-open-text"></i>
+              <a class="contact-link" href="monzer.twaissi@gmail.com" target="_blank">e-mail</a>
+            </li>
+            <li class="contact-icon">
+              <i class="fab fa-github"></i>
+              <a class="contact-link"  href="https://github.com/Monther-Twaissi" target="_blank">GitHub</a>
+            </li>
+            <li class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+              <a class="contact-link" href="https://linkedin.com/in/Monther-Twaissi" target="_blank" >Linked-In</a>
+            </li>
+          </div>
+          <div class="footer-section">
+            <h4>Dana Toughoj</h4>
+            <li class="contact-icon">
+              <i class="fas fa-envelope-open-text"></i>
+              <a class="contact-link" href="danatough@gmail.com" target="_blank">e-mail</a>
+            </li>
+            <li class="contact-icon">
+              <i class="fab fa-github"></i>
+              <a class="contact-link"  href="https://github.com/danatoughoj" target="_blank">GitHub</a>
+            </li>
+            <li class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+              <a class="contact-link" href="https://www.linkedin.com/feed/ " target="_blank" >Linked-In</a>
+            </li>
+          </div>
+          <div class="footer-section">
+          <h4>Mohammad Al-Zoubi</h4>
+            <li class="contact-icon">
+              <i class="fas fa-envelope-open-text"></i>
+              <a class="contact-link" href=" alzoubi.mohmad94@gmail.com" target="_blank">e-mail</a>
+            </li>
+            <li class="contact-icon">
+              <i class="fab fa-github"></i>
+              <a class="contact-link"  href=" https://github.com/Mohammad-Alzoubi" target="_blank">GitHub</a>
+            </li>
+            <li class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+              <a class="contact-link" href="https://www.linkedin.com/in/mohammad-alzoubi/" target="_blank" >Linked-In</a>
+            </li>
+          </div>
+        </div>
+        <div class="copyrights">CopyRights M.D.M 2020</div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="javascript/calculator-script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        
+        $("#h1").click(function(){
+            $("h1").css("color", "yellow");
+        });
+    });
+    </script>
+</body>
+</html>

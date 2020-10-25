@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Source+Sans+Pro:wght@600;900&display=swap" rel="stylesheet">
+
+    <title>MDM Management</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="index.html"> <img src="imgs/logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calculator.html">Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="todo.html">Todo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Theme</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" onclick="changeFont1Function()"> Source Sans Pro</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="left_part">
+            <div id="about">
+                <h1>
+                    MDM MANAGEMENT
+                </h1>
+                <hr>
+                <p> MDM is your favorite management website to manage your work, it has the basic features anyone would need, our website is special becuase of its attractive and simple design, we provide you with the ability to change the colors of the background between the green color theme or the gray color theme, change the font size of the text bigger or smaller, and lastley change the font family to what you find comfortable to your eyes. From the features we have is a calculator with many operations like summaition, subtraction ,factorial ,division ,power and absolute to perform of any numbers you want, also we have a very simple and easy to use to do list to add the important tasks you don't want forget, and you have the ability to delete tasks one by one if you don't want a specific task to appear on your to do list anymore, you can also check the task to indicate that you completed that task, and if you open your completed tasks tab you'll see all the tasks you've completed.</p>
+                <button class="btn1"> Contact Us </button>
+                <hr>
+                <div class="social_media">
+                    <span><i class="fab fa-linkedin"></i></span>
+                    <span><i class="fab fa-instagram"></i></span>
+                    <span><i class="fab fa-facebook"></i></span>
+                    <span><i class="fas fa-envelope-square"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="right_part">
+            <div class="box">
+                <h2>Calculator</h2>
+                <hr>
+                    
+                <p> Our Website offers a very fast a easy to use calculator with an atractive and simple design,all you have to do is to enter the numbers and operation you want to perform.</p>
+            </div>
+            <div class="box">
+                <h2>Todo List</h2>
+                <hr>
+                <p>Our Website offers a very proffesional To do List to manage your schedule, you can add your tasks ,delete them or check them to view them in the completed tasks section.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="m-footer">
+            <div class="footer-section">
+                <h4>Monther Twaissi</h4>
+                <li class="contact-icon">
+                <i class="fas fa-envelope-open-text"></i>
+                <a class="contact-link" href="monzer.twaissi@gmail.com" target="_blank">e-mail</a>
+                </li>
+                <li class="contact-icon">
+                <i class="fab fa-github"></i>
+                <a class="contact-link"  href="https://github.com/Monther-Twaissi" target="_blank">GitHub</a>
+                </li>
+                <li class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+                <a class="contact-link" href="https://linkedin.com/in/Monther-Twaissi" target="_blank" >Linked-In</a>
+                </li>
+            </div>
+            <div class="footer-section">
+                <h4>Dana Toughoj</h4>
+                <li class="contact-icon">
+                <i class="fas fa-envelope-open-text"></i>
+                <a class="contact-link" href="danatough@gmail.com" target="_blank">e-mail</a>
+                </li>
+                <li class="contact-icon">
+                <i class="fab fa-github"></i>
+                <a class="contact-link"  href="https://github.com/danatoughoj" target="_blank">GitHub</a>
+                </li>
+                <li class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+                <a class="contact-link" href="https://www.linkedin.com/feed/ " target="_blank" >Linked-In</a>
+                </li>
+            </div>
+            <div class="footer-section">
+                <h4>Monhammad al-Zoubi</h4>
+                <li class="contact-icon">
+                <i class="fas fa-envelope-open-text"></i>
+                <a class="contact-link" href=" alzoubi.mohmad94@gmail.com" target="_blank">e-mail</a>
+                </li>
+                <li class="contact-icon">
+                <i class="fab fa-github"></i>
+                <a class="contact-link"  href=" https://github.com/Mohammad-Alzoubi" target="_blank">GitHub</a>
+                </li>
+                <li class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+                <a class="contact-link" href="https://www.linkedin.com/in/mohammad-alzoubi/" target="_blank" >Linked-In</a>
+                </li>
+            </div>
+        </div>
+        <div class="copyrights">CopyRights M.D.M 2020</div>
+    </footer>
+    <script>
+        //Change Theme Font
+        changeFont1Function = () => document.getElementsByTagName('body')[0].style.fontFamily="'Source Sans Pro', sans-serif";
+    </script>
+</body>
+</html>

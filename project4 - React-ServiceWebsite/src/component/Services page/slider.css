@@ -1,0 +1,21 @@
+.carousel{
+    height: 100vh;
+}
+.slide{
+    height: 100vh;
+}
+.carousel-inner{
+    height: 100vh;
+}
+.carousel-item{
+    height: 100vh;
+}
+
+#uncontrolled-tab-example-tab-profile{
+    color: black !important;
+}
+
+#uncontrolled-tab-example-tab-home{
+    color: black !important;
+
+}

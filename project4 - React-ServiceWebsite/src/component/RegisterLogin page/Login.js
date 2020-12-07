@@ -31,11 +31,11 @@ const LogIn = () => {
   document.getElementsByTagName("META")[2].content="Damsa is a website for booking photography sessions anywhere and anytime, we have an esast and smooth login process";
     const { register, handleSubmit, errors, formState } = useForm({
     mode: "onBlur",
-  });
+  }); 
   
 
   function onSubmitLogIn(data) {
-    if (!(localStorage.getItem("userN",data.username))) {
+    if (!(localStorage.getItem(data.username))) {
       alert('Invalid Login User Name')
     }
     else {
@@ -45,7 +45,12 @@ const LogIn = () => {
         alert('the password is not match')
       }
       else {
-        sessionStorage.setItem('user',JSON.stringify(tempUser) )
+        sessionStorage.setItem('user', JSON.stringify(tempUser))
+
+        let userN=JSON.parse(localStorage.getItem(data.username))
+
+        localStorage.setItem('userN', JSON.stringify(userN))
+        
         localStorage.setItem('isLogin',true )
          { window.location.href = '/servicePage' }
       }

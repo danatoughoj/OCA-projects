@@ -11,7 +11,7 @@ class Booking extends Component {
     constructor(props) {
         super(props);
 
-        this.onChangeDate = this.onChangeDate.bind(this);
+        // this.onChangeDate = this.onChangeDate.bind(this);
         this.onChangeTime = this.onChangeTime.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
         this.state = {
@@ -23,9 +23,9 @@ class Booking extends Component {
 
 
     //Form events
-    onChangeDate (e) {
-        this.setState ({date: e.target.value})
-    }
+    // onChangeDate (e) {
+    //     this.setState ({date: e.target.value})
+    // }
     onChangeTime (e) {
         this.setState ({time: e.target.value})
     }

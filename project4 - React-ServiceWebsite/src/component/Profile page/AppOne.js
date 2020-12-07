@@ -4,30 +4,59 @@ import { WeatherData } from './WeatherData'
 import {StatusData} from "./StatusData"
 import CardGo from './CardGo';
 import React, { Component, Profiler } from 'react';
-const a = ['user' , ' offers','offers1' , 'date']
+import ProfileIcon from '../../component/images/profile icon.png'
 class AppOne extends Component{
-
-
-  
   state = {
     user: JSON.parse(localStorage.getItem("userN")) ,
     date: JSON.parse(sessionStorage.getItem("date")), 
     offer: JSON.parse(sessionStorage.getItem("offers1")), 
+    CoverImg1:ProfileIcon
   }
 
+ imageHandlerCover = (e) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      if (reader.readyState === 2) {
+        this.setState({ CoverImg1: reader.result });
+      }
+    };
+    reader.readAsDataURL(e.target.files[0]);
+  };
+
+  
 
 
-  render(){
+  render(){      
     document.title ="DAMSA | Profile Page"; 
     document.getElementsByTagName("META")[2].content="Damsa is a website for booking photography sessions anywhere and anytime, we have a very precise and up to date waether section you will love";
     return (
+
       <div className="profile_page">
         <div className="profile_page_left_part">
           <div className="profile_page_user_info">
-            <div><b><i className="fas fa-user"></i> User : {this.state.user.username} </b></div>
-            <div><b><i className="fas fa-envelope"></i> Email : {this.state.user.email}</b></div>
-            <hr />
+
+              <div className="BtnEditCover">
+                <input
+                  type="file"
+                  name="image-upload-Cover"
+                  id="inputCover"
+                  accept="image/*"
+                  onChange={this.imageHandlerCover}
+                />
+                <div className="image_container">
+                  <label htmlFor="inputCover" className="image-upload">
+                    <i class="fas fa-camera"></i></label>
+                  <img className="profile_image" src={this.state.CoverImg1} alt="" />
+                </div>
+              </div>
+        
+            <div className="user_info">
+              <b><i className="fas fa-user"></i> User : {this.state.user.username} </b><br />
+              <b><i className="fas fa-envelope"></i> Email : {this.state.user.email}</b>
+            </div>
           </div>
+          <hr />
+
           <div className="profile_page_weather">
               <MyWeather/>
           </div>
@@ -37,14 +66,17 @@ class AppOne extends Component{
             <div className='Booking'>
               BOOKED SESSIONS
             </div>
-              
             
+            
+            <div className="booked_cards_container">
+                   
             {(this.state.offer && this.state.offer.map((x) =>
-               < CardGo
+               <CardGo
                 location={x.location} date={x.SessionDate} TimeOfSession={x.time} CameraMan={x.photography} price={x.price}
-                duration={x.sessionHoures} theming={x.theming}
+                duration={x.sessionHoures} theming={x.theming} 
             />
               ))}
+              </div>
           </div>
         </div>
       </div>
@@ -160,4 +192,3 @@ class MyWeather extends React.Component {
   }
 }
 export default AppOne;
- 

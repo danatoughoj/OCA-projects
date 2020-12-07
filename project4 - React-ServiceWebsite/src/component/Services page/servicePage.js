@@ -28,13 +28,13 @@ function ServicPage() {
   const babies = [
     {
       img: sa3,
-      content: "have a nice outdoor graduation session with your family and dears,in this offer you will have outdoor tow hours session with our greatest omar khyami wiht his accessories ",
+      content: "have a nice outdoor graduation session with your family, in this offer you will have outdoor two hours session with our greatest Omar Khyami with his accessories ",
       title:"FAMILY SESSION",
       cost: "50 JOD",
       data: {
-      location: 'outdoor',
-      photography: 'omar khyami',
-      sessionHoures: 'tow hour',
+      location: 'Outdoor',
+      photography: 'Omar Khyami',
+      sessionHoures: 'Two hours',
       theming: 'with accessories',
       price: '50 JOD',
       id: 0,
@@ -47,13 +47,13 @@ function ServicPage() {
     {
       title:"2020 GRADUATION SESSION",
       img: sa5,
-      content: "Enjoy your graduation moment at 2020 and don't let COVD-19 stop you, iin this offer you will have outdoor, one hour session with the Astonishing Ali Sasdi. ",
+      content: "Enjoy your graduation moment at 2020 and don't let COVID-19 stop you, iin this offer you will have outdoor, one hour session with the Astonishing Ali Saadi. ",
       // id=2
       cost: "45 JOD",
       data:{
       location: 'Outdoor',
-      photography: 'Ali Sasdi',
-      sessionHoures: 'one hour',
+      photography: 'Ali Saadi',
+      sessionHoures: 'One hour',
       theming: 'without accessories',
       price: '45 JOD',
       id: 1,
@@ -66,14 +66,14 @@ function ServicPage() {
     {
       title:"FRIENDS SESSION",
       img: sa20,
-      content: " A sweet friendship refreshes the soul,So have a nice  session  with your best friends and keep your memories with out door,toe our session whit linda AL-Koury. ",
+      content: " A sweet friendship refreshes the soul, so have a nice  session  with your best friends and keep your memories with out door, two hours session with Linda Al-Khoury. ",
       // id=3
       cost: "55 JOD" ,
       data: {
-        location: 'outdoor',
-      photography: 'linda AL-Koury',
-      sessionHoures: 'one hour',
-      theming: 'without accessories',
+        location: 'Outdoor',
+      photography: 'Linda Al-Khoury',
+      sessionHoures: 'One hour',
+      theming: 'Without accessories',
       price: '55 JOD',
       id: 2,
       time:Date(),
@@ -103,13 +103,13 @@ function ServicPage() {
     {
       img: sa2,
       title:"LOVE MOMENT SESSION",
-      content: "You fell in love the way you fall asleep,slowly, and then all at once,have your own session and keep your moment  with omar khyami in outdoor one hour session ",
+      content: "You fell in love slowly, and then all at once, have your own session and keep your moment with Omar Khyami in outdoor one hour session ",
       cost: "45 JOD",
       data: {
-         location: 'outdoor',
-      photography: 'omar khyami',
-      sessionHoures: 'one hour',
-      theming: 'with accessories',
+         location: 'Outdoor',
+      photography: 'Omar Khyami',
+      sessionHoures: 'One hour',
+      theming: 'With accessories',
       price: '45 JOD',
       id: 0,
       time:Date(),
@@ -120,13 +120,13 @@ function ServicPage() {
     {
       img: sa1,
       title:"LOVE MOMENT SESSION",
-      content: "You fell in love the way you fall asleep ,slowly, and then all at once,have your own session with Ali Sasdi and his accessoriess in outdoor one tow session ",
+      content: "You fell in love the way you fall asleep, slowly, and then all at once, have your own session with Ali Saadi and his accessories in outdoor one hour session ",
       cost: "55 JOD",
       data: {
          location: 'Outdoor',
-      photography: 'Ali Sasdi',
+      photography: 'Ali Saadi',
       sessionHoures: 'one hour',
-      theming: 'without accessories',
+      theming: 'Without accessories',
       price: '55 JOD',
       id: 1,
       time:Date(),
@@ -139,13 +139,13 @@ function ServicPage() {
     {
       img: sa9,
       title:"LOVE MOMENT SESSION",
-      content: "You fell in love the way you fall asleep: slowly, and then all at once,have your own session and keep your moment  with linda AL-Koury in outdoor tow hour session ",
+      content: "You fell in love the way you fall asleep, slowly, and then all at once, have your own session and keep your moment with Linda Al-Khoury in outdoor two hours session ",
       cost: "50JOD", 
       data: {
-          location: 'outdoor',
-      photography: 'linda AL-Koury',
-      sessionHoures: 'tow hour',
-      theming: 'without accessories',
+          location: 'Outdoor',
+      photography: 'Linda Al-Khoury',
+      sessionHoures: 'Two hour',
+      theming: 'Without accessories',
       price: '50 JOD',
       id: 2,
       time:Date(),
@@ -172,12 +172,12 @@ function ServicPage() {
     {
       title:"CUTE BABIES SESSION",
       img: "https://www.avnidaphotography.com/wp-content/uploads/2015/05/20-4896-post/6-month-old-baby-Jacob-shows-off-the-cutest-pout-we-have-seen(pp_w768_h512).jpg",
-      content: "keep your cute baby memories and don't let them the memory die with our amazing photographer linda AL-Koury ,in this session you will have tow hour indoor session  .",
+      content: "Keep your cute baby memories with our amazing photographer Linda Al-Khoury, in this session you will have two hours indoor session.",
       cost: " 50 JOD",
       data: {
-          location: 'indoor',
-      photography: 'linda AL-Koury',
-      sessionHoures: 'tow hour',
+          location: 'Indoor',
+      photography: 'Linda Al-Khoury',
+      sessionHoures: 'Two hours',
       theming: 'without accessories',
       price: '50 JOD',
       id: 0,
@@ -189,13 +189,13 @@ function ServicPage() {
     {
       title:"BABY SMILE MEMORIES",
       img: "https://i.pinimg.com/564x/69/c4/81/69c48166cae8cf633fe84558669d6cd1.jpg",
-      content: "It is a smile of a baby that makes life worth living ,save yor baby smile with  the amazing linda AL-Koury and her Accessories in tow hour indoor session .",
+      content: "It is a smile of a baby that makes life worth living, save yor baby smile with the amazing Linda Al-Khoury and her Accessories in two hours indoor session .",
       cost: " 65 JOD",
       data: {
-          location: 'indoor',
-      photography: 'linda AL-Koury',
-      sessionHoures: 'tow hour',
-      theming: 'with accessories',
+          location: 'Indoor',
+      photography: 'Linda Al-Khoury',
+      sessionHoures: 'Two hours',
+      theming: 'With accessories',
       price: '65 JOD',
       id: 1,
       time:Date(),
@@ -208,13 +208,13 @@ function ServicPage() {
     {
       title:"FLOWER BABY ",
       img: "https://bambiniphoto.sg/wp-content/uploads/baby-photoshoot-7.jpg",
-      content: "A baby is as pure as an angel and as fresh as a blooming flower, so don't miss the memories with linda AL-Koury and her Accessories in one hour indoor session  .",
+      content: "A baby is as pure as an angel and as fresh as a blooming flower, so don't miss the memories with Linda Al-Khoury and her Accessories in one hour indoor session  .",
       cost: " 50 JOD",
       data: {
-        location: 'indoor',
-      photography: 'linda AL-Koury',
-      sessionHoures: 'one hour',
-      theming: 'with accessories',
+        location: 'Indoor',
+      photography: 'Linda Al-Khoury',
+      sessionHoures: 'One hour',
+      theming: 'With accessories',
       price: '50 JOD',
       id: 2,
       time:Date(),
@@ -300,7 +300,7 @@ function ServicPage() {
        
      </Tabs>
   </Tab>
-  <Tab eventKey="profile" title="COUSTMIZE YOUR SESSION">
+  <Tab eventKey="profile" title="CUSTOMIZE YOUR SESSION">
   <Coustem/>
   </Tab>
  

@@ -31,8 +31,11 @@ const stylesNode = {
 
 
 export default function RegisterForm() {
+
   document.title ="DAMSA | Register Page"; 
-  document.getElementsByTagName("META")[2].content="Damsa is a website for booking photography sessions anywhere and anytime, we have an esast and smooth registering process";
+  document.getElementsByTagName("META")[2].content = "Damsa is a website for booking photography sessions anywhere and anytime, we have an esast and smooth registering process";
+  
+  
   const { register, handleSubmit, errors, formState } = useForm({
     mode: "onBlur",
   });
@@ -52,6 +55,7 @@ export default function RegisterForm() {
       if ((JSON.stringify(data.password) === JSON.stringify(data.confirm))) {
               
         window.localStorage.setItem("userN", JSON.stringify(data))
+        window.localStorage.setItem( data.username, JSON.stringify(data))
         console.log(data);
         // alert('the account was created')
         { window.location.href = '/Login' }

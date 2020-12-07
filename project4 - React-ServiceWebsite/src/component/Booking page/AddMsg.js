@@ -4,7 +4,7 @@ import './Booking.css'
 
 export class AddMsg extends Component{
     constructor(props){
-        super(props);
+        super(props); 
     }
     render(){
         return(

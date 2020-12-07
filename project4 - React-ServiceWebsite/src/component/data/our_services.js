@@ -19,7 +19,7 @@ const OurServices=[
     {
         id:1,
         title:"Couples",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+        description:"There are so many moments in life that are worth remembering and we're committed and more than happy to help you make memories that will last forever and ever. Capture these moments with your loved one through storm, wind.    ",
         img1:Img1,
         img2:Img2,
         img3:Img3,
@@ -28,7 +28,7 @@ const OurServices=[
     {
         id:2,
         title:"Graduates",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+        description:"It’s a special day and there’s no harm in documenting the day. It’s your day, your hard work has paid off! If you are willing to spend a little bit more cash, you can have a special solo or group photo shoot in Lorem ipsum your graduation coat. ",
         img1:Img5,
         img2:Img6,
         img3:Img7,
@@ -37,7 +37,7 @@ const OurServices=[
     {
         id:3,
         title:"Babies",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+        description:"The best time for this milestone photoshoot, is when they are sitting up confidently, able to play with toys and interact  able to play with lory toys is when they are with you, giving smiles and starting to copy actions, without falling over. ",
         img1:Img9,
         img2:Img10,
         img3:Img11,

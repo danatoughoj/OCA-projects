@@ -104,6 +104,11 @@
   .App {
     text-align: center;
   }
+  @media only screen and (max-width: 600px) {
+    .testimonials_section{
+      height: 80vh;
+  }
+}
   
   @media only screen and (max-width: 934px) {
 

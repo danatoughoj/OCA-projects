@@ -32,13 +32,9 @@ class Galery extends Component {
 
                         <p className='somthing'>
 
-                            THE COST $:
-                            <i><b>
-                                {this.props.cost}
-                            </b>
-                            </i>
+                            THE COST: <i><b>{this.props.cost}</b></i>
                         </p><a href="/Booking">
-                            <button onClick={() => {
+                            <button  onClick={() => {
                                   ;
                                   
                                 if ((JSON.parse(sessionStorage.getItem('offers1')))) {                                    

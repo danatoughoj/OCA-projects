@@ -39,19 +39,27 @@
     background-color: white;
     color: black;
     border: black 1px solid;
-    font-size: .75rem;
-    width: 5rem;
+    font-size: 1rem !important;
+    width: 7rem;
     height: 2rem;
     /* justify-content: ; */
     align-items: center;
     /* margin-top: 11rem; */
 
+    background-color: #C7B7AA;
+    /* padding: 0.75rem .5rem; */
+    color: white;
+    border: none;
+    box-shadow: 5px 5px 18px lightgray;
+
+
 
 }
 
 .CardContent button:hover {
-    background-color: #ccc2b9;
-
+    background-color: transparent;
+    color: #C7B7AA;
+    font-weight: 600;
 }
 
 
@@ -155,7 +163,7 @@
 
         top: 4vh;
         left: 0vw;
-        width: 4.5rem;
+        width: 6rem;
         height: 2rem;
         font-size: .75rem;
     }
@@ -194,7 +202,7 @@
 
         top: 5.5vh;
         left: 1vw;
-        width: 4rem;
+        width: 6rem;
         height: 2rem;
         font-size: .65rem;
     }
@@ -232,7 +240,7 @@
 
         top: 6.5vh;
         left: 2.5vw;
-        width: 4rem;
+        width: 6rem;
         height: 2rem;
         font-size: .65rem;
     }

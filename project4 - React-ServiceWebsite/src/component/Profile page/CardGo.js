@@ -1,6 +1,5 @@
 import React from 'react';
 // import React, { useState } from "react";
-
 class CardGo extends React.Component {
   constructor(props) {
     super(props)
@@ -9,11 +8,13 @@ class CardGo extends React.Component {
       
     };
   }
+  
   // const setData() {
-  //   this.userData = JSON.parse(sessionStorage.getItem('user'))
-  //   let data sessionStorage.getItem('user')) 
-  render() {
-    return ( 
+    //   this.userData = JSON.parse(sessionStorage.getItem('user'))
+    //   let data sessionStorage.getItem('user')) 
+    render() {
+      return ( 
+      
       <div>  
         <div className="Photography">
           <div className="booked_photo_sessions_cards">

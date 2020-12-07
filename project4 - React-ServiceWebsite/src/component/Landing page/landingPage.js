@@ -21,9 +21,10 @@ import Img2 from "../images/graduate7.jpg";
 import Img3 from "../images/couples9.jpg";
 import Img4 from "../images/graduate2.jpg";
 import Img5 from "../images/graduate1.jpg";
-import Img6 from "../images/developer1.jpg";
+import Img6 from "../images/mS.jpg";
 import Img7 from "../images/developer2.jpg";
-import Img8 from "../images/developer3.jpg";
+import Img8 from "../images/amal.jpg";
+import Img9 from "../images/khadeejah.jpg";
 
 class LandingPage extends React.Component {
     render() {
@@ -177,25 +178,23 @@ class Testimonials extends React.Component{
                 autoPlay={true}
                 interval={6100}>
                 <div>
-                <img src={Img6} alt="customer 1 picture" />
+                <img src={Img9} alt="customer 1 picture" />
                 <div className="myCarousel">
-                    <h3>Shirley Fultz</h3>
-                    <h4>Designer</h4>
+                    <h3>Khadeejah Hamdan</h3>
+                    <h4>Trainer</h4>
                     <p>
-                    It's freeing to be able to catch up on customized news and not be
-                    distracted by a social media element on the same site
-                    </p>
+                    Its a very creative and new idea and you have smart visual identity</p>
                 </div>
                 </div>
         
                 <div>
-                <img src={Img7} alt="customer 2 picture" />
+                <img src={Img6} alt="customer 2 picture" />
                 <div className="myCarousel">
-                    <h3>Daniel Keystone</h3>
-                    <h4>Designer</h4>
+                    <h3>Mohammad Al-Shwaiki</h3>
+                    <h4>Trainer</h4>
                     <p>
                     The simple and intuitive design makes it easy for me use. I highly
-                    recommend Fetch to my peers.
+                    recommend it to my peers.
                     </p>
                 </div>
                 </div>
@@ -203,11 +202,11 @@ class Testimonials extends React.Component{
                 <div>
                 <img src={Img8} alt="customer 3 picture" />
                 <div className="myCarousel">
-                    <h3>Theo Sorel</h3>
-                    <h4>Designer</h4>
+                    <h3>Saja dahamsheh</h3>
+                    <h4>Trainer</h4>
                     <p>
-                    I enjoy catching up with Fetch on my laptop, or on my phone when
-                    I'm on the go!
+                    I enjoy book my sessions with Damsa on my laptop, or on my phone when
+                    I'm on the go it's very easy to book!
                     </p>
                 </div>
                 </div>

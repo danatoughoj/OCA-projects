@@ -60,11 +60,11 @@ class Coustem extends Component {
 
                     <div className='coustem-form' >
                         <form onSubmit={this.onSubmit}>
-                            <label for="theme">Chose photo session time:</label>
+                            <label for="theme">Choose photo session time:</label>
                             <br />
                             <select id="time" name="value" onChange={this.onChange}>
-                                <option value="5">one hour</option>
-                                <option value="10">tow hour</option>
+                                <option value="5">One hour</option>
+                                <option value="10">Two hours</option>
 
                             </select>
 
@@ -72,7 +72,7 @@ class Coustem extends Component {
                             <br />
                             <br />
 
-                            <label for="theme">Chose the session location:</label>
+                            <label for="theme">Choose the session location:</label>
                             <br />
                             <select id="location" name="location" onChange={this.onChange}>
                                 <option value="15">Indoor</option>
@@ -82,25 +82,25 @@ class Coustem extends Component {
                             <br />
                             <br />
 
-                            <label for="theme"> Photography accessories:</label>
+                            <label for="theme">Do you need photography accessories?</label>
                             <br />
                             <select id="them" name="theme" onChange={this.onChange}>
-                                <option value="7">yes</option>
-                                <option value="0">no</option>
+                                <option value="7">Yes</option>
+                                <option value="0">No</option>
 
                             </select>
 
                             <br />
                             <br />
 
-                            <label for="photographer">Chose the photographer:</label>
+                            <label for="photographer">Choose the photographer:</label>
                             <br />
 
                             <select id="photographer" name="photographer" onChange={this.onChange}>
-                                <option value="15">Ali saadi</option>
-                                <option value="20">anas al-kurdi</option>
-                                <option value="25">linda al-koury</option>
-                                <option value="30">omar khyami</option>
+                                <option value="15">Ali Saadi</option>
+                                <option value="20">Anas Al-Kurdi</option>
+                                <option value="25">Linda Al-Khoury</option>
+                                <option value="30">Omar Khyami</option>
                             </select>
 
                             <br />
@@ -108,7 +108,7 @@ class Coustem extends Component {
                             <br />
 
 
-                            <h5>The cost of your photo session is({eval(value) + eval(location) + eval(theme) + eval(photographer)})</h5>
+                            <h5>The cost of your photo session is:({eval(value) + eval(location) + eval(theme) + eval(photographer)}) JOD</h5>
                            
                                
                          
@@ -117,7 +117,7 @@ class Coustem extends Component {
 
                     </div>
                     <a href="/Booking">
-                     <button >
+                     <button className="btn1" >
                         Book now
                     </button>
                     </a>

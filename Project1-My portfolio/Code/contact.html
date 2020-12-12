@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="index.html"> <img src="imgs/logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Skills</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <hr>
+        <div id="contact_container">
+            <form action="">
+                <div class="form_row">
+                    <input type="text" id="first_name" name="first_name" placeholder="Your First Name" required class="input_item">
+                    <input type="text" id="last_name" name="last_name" placeholder="Your Last Name" required class="input_item ">
+                </div>
+                <div class="form_row">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required class="input_item">
+                </div>
+                <div class="form_row" style="margin-top: 10px;margin-bottom: 10px;">
+                    <select name="country" id="city" class="input-item">
+                        <option value="country" selected>Your Country</option>
+                        <option value="Amman">Jordan</option>
+                        <option value="Amman">Canada</option>
+                        <option value="Amman">America</option>
+                        <option value="Amman">Lebanon</option>
+                        <option value="Amman">Egypt</option>
+                        <option value="Amman">Switzerland</option>
+                    </select>
+                </div>
+                <div class="form_row">
+                    <textarea name="message" id="message" cols="30" rows="10" class="input_item ml-0 mr-0">Your Message</textarea>
+                </div>
+                <button class="btn1">Send</button>
+            </form>
+        </div>
+
+        <div class="social_media">
+            <span><i class="fab fa-linkedin"></i></span>
+            <span> <i class="fab fa-github"></i></span>
+            <span><i class="fab fa-facebook"></i></span>
+            <span><i class="fas fa-envelope-square"></i></span>
+        </div>
+    </section>
+</body>
+</html>

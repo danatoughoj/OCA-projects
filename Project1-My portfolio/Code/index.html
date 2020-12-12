@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+          <a class="navbar-brand" href="index.html"> <img src="imgs/logo.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <section id="home">
+      <div class="intro-left-part">
+          <h1> I'm Dana</h1>
+          <p> Full Stack Web and Mobile Developer</p>
+          <a href="#about"><button class="btn1">About Me </button></a> 
+      </div>
+      <div class="intro-right-part">
+        <img src="imgs/intro-pic.png" alt="my picture 1" class="intro_pic">
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-left-part">
+        <img src="imgs/about-pic.png" alt="my picture 2" class="about_pic">
+      </div>
+      <div class="about-right-part">
+        <h2>About Me</h2>
+        <hr><br><br>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sunt, suscipit soluta doloremque incidunt repellendus quo. Reprehenderit deleniti, pariatur molestias libero quas ullam iste suscipit nihil illum quidem molestiae animi velit magnam officia voluptatibus at nobis facere inventore eligendi incidunt minus, ex eos temporibus! Reprehenderit mollitia molestiae quo ab. Perspiciatis magni atque in sapiente asperiores corporis fugit recusandae animi enim! Non eos impedit reprehenderit nisi possimus, neque perferendis quo provident eligendi laborum eius necessitatibus quos deleniti, ea minima sint commodi voluptatem dolorum eum maiores. Vero magnam laboriosam vel incidunt ipsum earum sed, tempore voluptatum repellat est officia dignissimos numquam similique voluptatem optio? Quisquam ipsa eligendi ut perferendis laudantium, a reiciendis beatae voluptatum nostrum possimus accusamus sint quis quasi amet aut aliquid quia, illo cum inventore aliquam saepe. Inventore earum molestiae perferendis eligendi voluptatem quaerat ipsam. Repudiandae libero, corporis tempore cumque iusto modi laboriosam praesentium ea, delectus quo iste atque similique sit odio dignissimos laborum impedit vitae, voluptas doloremque nisi eos. Nesciunt ab incidunt similique optio quas? Libero explicabo sunt facere ducimus totam nostrum voluptatum aperiam reiciendis cum consequatur nobis, magni illum autem mollitia dolores quae dolor, quas aliquid maiores odit cumque suscipit architecto? Optio rem consectetur repellat sequi laudantium iste?
+        </p>
+        <div style="text-align: center;">
+          <a href="#skills"><button class="btn2">Skills</button></a>
+          <a href="projects.html"><button class="btn2">Projects</button></a>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <hr>
+      <div id="skills_container">
+        <div class="skill"> 
+          <img src="imgs/icons/html.png" alt="HTML" class="skill_icon">
+          <h3>HTML</h3>
+          <progress id="file" value="70" max="100" class="progress"></progress>
+        </div>
+        <div class="skill"> 
+          <img src="imgs/icons/css.png" alt="CSS" class="skill_icon">
+          <h3>CSS</h3>
+          <progress id="file" value="60" max="100" class="progress"> 32% </progress>
+        </div>
+        <div class="skill"> 
+          <img src="imgs/icons/js.png" alt="JS" class="skill_icon">
+          <h3>JavaScript</h3>
+          <progress id="file" value="20" max="100" class="progress"> 32% </progress>
+        </div>
+        <div class="skill"> 
+          <img src="imgs/icons/php.png" alt="PHP" class="skill_icon">
+          <h3>PHP</h3>
+          <progress id="file" value="50" max="100" class="progress"> 32% </progress>
+        </div>
+        <div class="skill"> 
+          <img src="imgs/icons/laravel.png" alt="LARAVEL" class="skill_icon">
+          <h3>Laravel</h3>
+          <progress id="file" value="40" max="100" class="progress"> 32% </progress>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h2> Have Any Projects In Mind?</h2>
+      <a href="contact.html"><button class="btn1"> Contact Me </button></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+.about_section{
+    padding: 1rem;
+    margin-top: 5.5rem;
+}
+
+.about_content{
+width: 80%;
+text-align: center;
+margin: auto;
+font-size: 1.2rem;
+}
+
+.title { 
+    text-align: center;
+    color:#E0A800;
+}
+
+.Sub-title{
+    text-align: center;
+}
+
+.Carousel-container{
+    margin-top: 1rem;
+}
+
+.Carousel-img{
+    border-radius: 555px 25px 15px 25px/25px 5px 35px 555px;
+}
+.chef_card{
+    min-width: 250px;
+}
+.card-text{
+    text-align: left;
+}
+
+.Testimonials-carousel{
+    border-top: #000 solid 1px;
+    border-bottom: #000 solid 1px;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.Testimonial-caption{
+    text-align: center;
+}
+
+.Testimonial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.figure{
+    width: 55%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,52 @@
+.YouTubeFullDiv * {
+
+  box-sizing: border-box;
+}
+
+.YouTubeFullDiv {
+  margin: 5rem 0 2rem 0;
+}
+
+.YouAPI {
+
+  width: 95%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* box-shadow: 0 0 3px ##adadad; */
+  background-color: #252525;
+  border: rgb(36, 36, 36) 10px solid;
+  border-radius: 555px 25px 15px 25px/25px 5px 35px 555px;
+  margin: auto;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.YouAPI .backfood {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.15;
+  width: 100%;
+  min-height: 100%;
+}
+
+
+
+.VideoContainer {
+  display: inline-block;
+  margin: 1rem;
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+  .YouAPI .backfood {
+
+    width: 1920px;
+    opacity: 0.1;
+  }
+
+}

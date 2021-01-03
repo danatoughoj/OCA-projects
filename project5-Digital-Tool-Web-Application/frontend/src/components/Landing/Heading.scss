@@ -1,0 +1,417 @@
+.Heading {
+  width: 100%;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+  .Jumbotron {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    .backfood {
+      position: absolute;
+      z-index: 0;
+      opacity: 0.15;
+    }
+
+    .text {
+      margin-top: -15rem;
+      text-align: center;
+      color: white;
+      // background-color: aqua;
+      text-shadow: 0 0 3px #000;
+
+      h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 7rem;
+        max-width: 90vw;
+      }
+
+      p {
+        font-weight: 100;
+        font-size: 1.3rem;
+        max-width: 90vw;
+        padding: 0;
+        margin: 5px 0 -15px 0;
+      }
+    }
+
+    .img-Main-Landing {
+      position: absolute;
+      top: 16%;
+      height: 100%;
+
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+
+      img {
+        width: 38rem;
+
+        max-width: 90%;
+        height: auto;
+        animation: Burger 2s ease-in-out;
+        transition: 0.5s;
+
+        &:hover {
+          transform: scale(0.98);
+          opacity: 0.8;
+        }
+
+        @keyframes Burger {
+          0% {
+            transform: scale(1) rotateX(0deg) rotateY(0deg);
+            opacity: 0.1;
+          }
+
+          50% {
+            transform: scale(0.97) rotateX(0.1deg) rotateY(0.1deg);
+          }
+
+          100% {
+            transform: scale(1) rotateX(0) rotateY(0);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.Trending {
+  line-height: 1;
+
+  width: 100%;
+  height: 100%;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .MainCardDiv {
+    padding: 15px;
+
+    .MainCard {
+      place-items: center;
+      background-color: #f8f3e5;
+      font-size: 2rem;
+      height: 100%;
+      transition: 0.5s ease;
+
+      .Main-Trinding-Image {
+        width: 75%;
+      }
+
+      .card-body {
+        text-align: center;
+        height: 5rem;
+      }
+
+      &:hover {
+        transform: scale(0.98) rotateZ(-1deg);
+        background-color: #ece3c8;
+
+        cursor: pointer;
+      }
+    }
+  }
+
+  .TrendingRight {
+    .rightRow {
+      .rightCol {
+        padding: 15px;
+        box-sizing: border-box;
+
+        .TrendCards {
+          margin: 5px;
+          background-color: #f8f3e5;
+          display: grid;
+          place-items: center;
+          transition: 0.5s ease;
+
+          .CardImage {
+            width: 60%;
+          }
+
+          #sweetClass {
+            width: 45%;
+          }
+
+          .rightBody {
+            font-size: 1.3rem;
+            height: 7rem;
+            padding: 1.25rem 3px;
+            text-align: center;
+
+            .card-text {
+              text-align: center;
+
+            }
+
+          }
+
+          &:hover {
+            transform: scale(0.98) rotateZ(1deg);
+            background-color: #ece3c8;
+
+            cursor: pointer;
+          }
+
+        }
+      }
+    }
+  }
+
+  .CardFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    font-size: 1em;
+
+    .btn-toolbar {
+      display: block;
+    }
+
+    .btn {
+      padding: 2px 4px;
+      height: fit-content;
+      width: 100%;
+      height: 100%;
+    }
+
+    .btnBar {
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+}
+
+.Dessert {
+  background-color: black;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+  .Jumbotron {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    .backfood {
+      position: absolute;
+      z-index: 0;
+      opacity: 0.15;
+    }
+
+    .text {
+      margin-top: -19rem;
+      text-align: center;
+      color: white;
+      // background-color: aqua;
+      text-shadow: 0 0 3px #000;
+
+      h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 7rem;
+        max-width: 90vw;
+      }
+
+      p {
+        font-weight: 100;
+        font-size: 1.3rem;
+        max-width: 90vw;
+        padding: 0;
+        margin: 5px 0 -15px 0;
+      }
+    }
+
+    .img-Main-Landing {
+      position: absolute;
+      top: 12%;
+      height: fit-content;
+
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+
+      img {
+        width: 30rem;
+
+        max-width: 90%;
+        height: auto;
+        animation: Burger 2s ease-in-out;
+        transition: 0.5s;
+
+        &:hover {
+          transform: scale(0.98);
+          opacity: 0.8;
+        }
+
+        @keyframes Burger {
+          0% {
+            transform: scale(1) rotateX(0deg) rotateY(0deg);
+            opacity: 0.1;
+          }
+
+          50% {
+            transform: scale(0.97) rotateX(0.1deg) rotateY(0.1deg);
+          }
+
+          100% {
+            transform: scale(1) rotateX(0) rotateY(0);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer1 {
+  background-color: black;
+  color: white;
+  // border-radius: 555px 25px 15px 25px/25px 5px 35px 555px;
+
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  h2 {
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+
+  .col {
+    display: grid;
+    place-items: center;
+
+    p {
+      margin: 0;
+      width: 5rem;
+      transition: 0.5s;
+      text-align: center;
+
+      &:hover {
+        transform: scale(1.05);
+        background-color: white;
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .Trending {
+    .col {
+      flex-basis: auto;
+    }
+
+    .MainCardDiv {
+      width: 95vw;
+      padding: 15px;
+
+      .MainCard {
+        font-size: 2rem;
+
+        .Main-Trinding-Image {
+          width: 75%;
+        }
+
+        .card-body {
+          height: auto;
+        }
+      }
+    }
+
+    .TrendingRight {
+      .rightRow {
+        .rightCol {
+          padding: 15px;
+
+          .TrendCards {
+            margin: 5px;
+
+            .CardImage {
+              width: 70%;
+            }
+
+            .rightBody {
+              font-size: 1.3rem;
+              height: 5rem;
+              padding: 1.25rem 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Dessert {
+    .Jumbotron {
+      .text {
+        margin-bottom: 5rem;
+
+        h1 {
+          font-size: 4rem;
+          max-width: 90vw;
+        }
+
+        p {
+          font-size: 1.2rem;
+          max-width: 90vw;
+          margin: 10px 0 -10px 0;
+        }
+
+
+      }
+
+      .img-Main-Landing {
+        top: 7%;
+      }
+    }
+  }
+
+  .Heading {
+    .Jumbotron {
+
+      .text {
+        top: 15%;
+
+        h1 {
+          font-size: 4rem;
+          max-width: 90vw;
+        }
+
+        p {
+          font-size: 1.2rem;
+          max-width: 90vw;
+          margin: 5px 0 -15px 0;
+        }
+
+
+      }
+
+
+      .img-Main-Landing {
+        top: 16%;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "LCRN06-book-store-app-expo",
-    "slug": "LCRN06-book-store-app-expo",
+    "name": "BookTime-app-expo",
+    "slug": "BookeTime-app-expo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
